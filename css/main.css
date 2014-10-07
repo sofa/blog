@@ -14,20 +14,41 @@ html, body { height: 100%; }
 
 body {
   background-color: #FFF;
-  font: 13.34px Helvetica, Arial, sans-serif;
-  font-size: small;
+  font-family: 'Bitter', serif;
+  font-size: 14px;
   text-align: center;
+  line-height: 1.42857;
+  color: #333;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-size: 100%; }
 
 h1 { margin-bottom: 1em; }
-p { margin: 1em 0; }
 
-a         { color: #00a; }
-a:hover   { color: #000; }
-a:visited { color: #a0a; }
+h2 {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 22px;
+  font-family: 'Source Sans Pro' sans-serif;
+}
+
+h2 a {
+  color: #333;
+}
+
+p { 
+  margin: 1em 0;
+  font-size: 1.3em;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+a { 
+  color: #56ADBA;
+  text-decoration: none;
+}
+
+a:hover   { color: #2A6496; }
 
 /*****************************************************************************/
 /*
@@ -46,7 +67,6 @@ a:visited { color: #a0a; }
 .posts span {
   color: #aaa;
   font-family: Monaco, "Courier New", monospace;
-  font-size: 80%;
 }
 
 /*****************************************************************************/
@@ -56,7 +76,6 @@ a:visited { color: #a0a; }
 /*****************************************************************************/
 
 .site {
-  font-size: 115%;
   text-align: justify;
   width: 42em;
   margin: 3em auto 2em;
@@ -64,17 +83,19 @@ a:visited { color: #a0a; }
 }
 
 .header a {
-  font-weight: bold;
   text-decoration: none;
 }
 
 .title {
-  display: inline-block;
   margin-bottom: 2em;
+  font-size: 2.8em;
+  font-weight: 500;
+  line-height: 1.1;
+  text-align: center;
 }
 
 .title a {
-  color: #a00;
+  color: #333;
 }
 
 .title a:hover {
@@ -95,7 +116,6 @@ a:visited { color: #a0a; }
 }
 
 .footer {
-  font-size: 80%;
   color: #666;
   border-top: 4px solid #eee;
   margin-top: 2em;
