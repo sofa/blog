@@ -41,6 +41,7 @@ p {
   margin: 1em 0;
   font-size: 1.3em;
   font-family: 'Source Sans Pro', sans-serif;
+  line-height: 1.42857;
 }
 
 a { 
@@ -60,10 +61,6 @@ a:hover   { color: #2A6496; }
   margin-bottom: 2em;
 }
 
-.posts li {
-  line-height: 1.75em;
-}
-
 .posts span {
   color: #aaa;
   font-family: Monaco, "Courier New", monospace;
@@ -77,9 +74,14 @@ a:hover   { color: #2A6496; }
 
 .site {
   text-align: justify;
-  width: 42em;
   margin: 3em auto 2em;
   line-height: 1.5em;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.header {
+  text-align: center;
 }
 
 .header a {
@@ -92,6 +94,7 @@ a:hover   { color: #2A6496; }
   font-weight: 500;
   line-height: 1.1;
   text-align: center;
+  margin-top: 0.5em;
 }
 
 .title a {
@@ -122,13 +125,24 @@ a:hover   { color: #2A6496; }
   overflow: hidden;
 }
 
-.footer .contact {
-  float: left;
-  margin-right: 3em;
+/* .contact p { */
+/*   text-align: center; */
+/* } */
+
+.contact a {
+  display: inline-block;
+  padding: 0.3em;
+  text-align: center;
 }
 
-.footer .contact a {
-  color: #8085C1;
+/* .contact { */
+/*   /1* display: inline-block; *1/ */
+/*   width: 49%; */
+/*   vertical-align: top; */
+/* } */
+
+.contact .fa {
+  color: #333;
 }
 
 .footer .rss {
@@ -139,6 +153,10 @@ a:hover   { color: #2A6496; }
 
 .footer .rss img {
   border: 0;
+}
+
+.logo {
+  width: 100px;
 }
 
 /*****************************************************************************/
@@ -177,4 +195,10 @@ a:hover   { color: #2A6496; }
 
 .post pre.terminal code {
   background-color: #333;
+}
+
+@media all and (min-width: 700px) {
+  .site {
+    width: 49em;
+  }
 }

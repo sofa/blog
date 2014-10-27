@@ -8,6 +8,7 @@
 
         <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700,400italic,600italic,700italic' rel='stylesheet' type='text/css'>
         <link href='http://fonts.googleapis.com/css?family=Bitter:400,700,400italic' rel='stylesheet' type='text/css'>
+        <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
         <!-- syntax highlighting CSS -->
         <link rel="stylesheet" href="{{site.baseurl}}/css/syntax.css">
 
@@ -19,7 +20,8 @@
 
         <div class="site">
           <div class="header">
-            <h1 class="title"><a href="/{{site.baseurl}}">{{ site.name }}</a></h1>
+            <a href="/{{site.baseurl}}"><img class="logo" src="/images/sofa-og-logo.png"></a>
+            <h1 class="title"><a href="/{{site.baseurl}}">Sofa.io Blog</a></h1>
           </div>
 
           {{ content }}
@@ -27,10 +29,15 @@
           <div class="footer">
             <div class="contact">
               <p>
-                <a href="https://github.com/sofa">github.com/sofa</a><br />
-                <a href="https://twitter.com/sofa">twitter.com/sofa_io</a><br />
+              <a href="https://sofa.io"><i class="fa fa-home"></i> sofa.io</a>
+              <a href="https://github.com/sofa"><i class="fa fa-github"></i> /sofa</a>
+              <a href="https://twitter.com/sofa"><i class="fa fa-twitter"></i> @sofa_io</a>
+              <a href=""><i class="fa fa-google-plus-square"></i> +sofa</a>
               </p>
             </div>
+            <!-- <div class="contact"> -->
+            <!--   <p>The latest goings-on with the sofa project and in the community. We'll update the blog to announce major releases and showcase cool stuff being built with sofa.</p> -->
+            <!-- </div> -->
           </div>
         </div>
 
