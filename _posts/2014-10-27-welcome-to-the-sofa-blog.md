@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Welcome to the sofa blog!"
-date:   2014-10-20
+date:   2014-10-27
 categories:
   - announcements
 ---
