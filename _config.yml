@@ -1,5 +1,5 @@
 name: Sofa.io Blog
 markdown: redcarpet
-pygments: true
+highlighter: pygments
 baseurl: /blog
 title: The Sofa Blog
