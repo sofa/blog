@@ -2,6 +2,7 @@
 layout: post
 title:  "Welcome to the sofa blog!"
 date:   2014-10-27
+summary: A few weeks ago Christoph wrote about our open source mission with the sofa project at CouchCommerce. In order to keep the development of sofa not only open source, but also as transparent as possible, we created this blog to keep you up-to-date with the latest releases, as well as cool things happening in the community.
 categories:
   - announcements
 ---
