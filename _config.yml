@@ -5,3 +5,4 @@ baseurl: /blog
 title: The Sofa Blog
 
 url: http://sofa.io/blog
+rss_path: /blog
