@@ -3,3 +3,5 @@ markdown: redcarpet
 highlighter: pygments
 baseurl: /blog
 title: The Sofa Blog
+
+url: http://sofa.io/blog
