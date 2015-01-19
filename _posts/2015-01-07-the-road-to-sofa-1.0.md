@@ -5,7 +5,6 @@ date:   2016-01-19
 summary: 
 categories:
   - announcements
-  - sofa 1.0
 ---
 
 As we are all slowly recovering from Christmas and New Years Eve we thought it might be a good start to 2015 to let you know what we've been working on recently and what our plans are for the new year.
