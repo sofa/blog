@@ -1,26 +1,29 @@
 #!/bin/bash
 
-echo -e "\033[0;32mDeploying sofa.io blog...\033[0m"
+echo -e "\033[0;32mDeploying updates to Github...\033[0m"
 
-# delete old gh-pages branch
-git branch -D deploy
+# Push source and build repos.
+git push origin dev
 
-git checkout -b deploy
+# Checkout temporally branch where we can add _site directory
+git checkout -b temp
+
+# Build the project.
+jekyll build
 
 # Add changes to git.
-git add -f _site
+git add -A
+git add -fA _site
 
 # Commit changes.
-msg="chore(*): adding dist `date`"
+msg="rebuilding site `date`"
 if [ $# -eq 1 ]
   then msg="$1"
 fi
 git commit -m "$msg"
 
-git subtree split -P _site -b deploy-dist
-
-# Push source and build repos.
-git push -f origin deploy-dist:gh-pages
-git branch -D deploy-dist
+git branch -D gh-pages
+git subtree split -P _site -b gh-pages
+git push -f origin gh-pages:gh-pages
 git checkout dev
-git branch -D deploy
+git branch -D temp
