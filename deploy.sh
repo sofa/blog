@@ -25,4 +25,5 @@ git commit -m "$msg"
 git branch -D gh-pages
 git subtree split -P _site -b gh-pages
 git push -f origin gh-pages:gh-pages
+git checkout dev
 git branch -D temp
