@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+  xmlns:content="http://purl.org/rss/1.0/modules/content/"
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"
+  xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/">
+  <channel>
+    <title>Sofa.io Blog</title>
+    <link>http://sofa.io/blog</link>
+    <description>RSS feed for Sofa.io Blog</description>
+    <pubDate>Tue, 19 Jan 2016 00:00:00 +0100</pubDate>
+    <item>
+      <title>The road to sofa 1.0</title>
+      <link>http://sofa.io/blog/announcements/2016/01/19/the-road-to-sofa-1.0.html</link>
+      <description><![CDATA[As we are all slowly recovering from Christmas and New Years Eve we thought it might be a good start to 2015 to let you know what we&#39;ve been working on recently and what our plans are for the new year.
+]]></description>
+      <pubDate>Tue, 19 Jan 2016 00:00:00 +0100</pubDate>
+      <guid>http://sofa.io/blog/announcements/2016/01/19/the-road-to-sofa-1.0.html</guid>
+      <content:encoded><![CDATA[<p>As we are all slowly recovering from Christmas and New Years Eve we thought it might be a good start to 2015 to let you know what we&#39;ve been working on recently and what our plans are for the new year.</p>
+
+<p>As some of you may have noticed we are quite busy working towards a sofa 1.0 release. We have nailed down a concrete list of tasks and are hard at work to solve them. I&#39;d like to shed some light on each of them and hope to get you excited for 1.0.</p>
+
+<h3>RIP sofa-base</h3>
+
+<p>When we started with the sofa project, we had all the sofa code in one repository. We always knew we wanted sofa to be modular but having all the code together was just easier to begin with and enabled us to experiment and iterate faster. As soon as we felt confident about a component we were able to package it up and release it as a standalone module. This includes that the component got it&#39;s own repository within the sofa organization on github with it&#39;s own issue management, npm and bower packages, documentation and tests.</p>
+
+<p>Over the months we have sliced lots of packages but we also had to clarify lots of open questions and we have still plenty of components waiting to get released as standalone components. We are currently hard at working slicing all the remaining components.</p>
+
+<p>As the <a href="https://github.com/couchcommerce/sofa-base">sofa-base repository</a> has never been part of the sofa organization on github and no npm packages exist, it&#39;s been a constant source of confusion for the sofa community. </p>
+
+<div style="text-align:center">
+    <img src="/blog/images/the-road-to-sofa-1-0/sofa-base-confusion.png" style="max-width: 90%; max-height: 400px; float:none">
+</div>
+
+<p>We are very much looking forward to shut down the repository as soon as all components are sliced and released as standalones.</p>
+
+<h3>RIP cc-something</h3>
+
+<p>You may have noticed some inconsistency in our code base regarding naming and namespaces. Sofa wasn&#39;t born as sofa. It was born as &quot;CouchCommerce WebApp SDK&quot; and renamed to sofa later along the way. Hence we still had plenty of namespaces and prefixes to correct. Everything that previously was <code>cc-something</code> is now <code>sofa-something</code>.</p>
+
+<p>More importantly we created <a href="https://github.com/sofa/guidelines/blob/master/coding-guideline.md">Coding Guidelines</a> to ensure the sofa 1.0 codebase will be consistent across all components.</p>
+
+<p>We also plan to create simple and clear <a href="https://github.com/sofa/guidelines/blob/master/contribution-guideline.md">Contribution Guidelines</a> to lower the barrier for community members to contribute code to the sofa project.</p>
+
+<h3>New Checkout</h3>
+
+<p>Over the last months we have become more and more frustrated with our current Checkout. Integrating new payment service providers and different payment methods yielded way more repetitive work than anticipated.</p>
+
+<p>We sat down with the entire team to overhaul the whole workflow. We are creating a new Checkout API from the ground up. On top of that we are rewriting the <a href="https://github.com/sofa/sofa-checkout-service">sofa-checkout-service</a> to be much more flexible and specifically to make it easier to integrate third party services.</p>
+
+<p>We are also rewriting the whole Checkout UI to be more beautiful, simpler to use and easier to customize.</p>
+
+<div style="text-align:center">
+    <img src="/blog/images/the-road-to-sofa-1-0/checkout.png" style="max-width: 90%; max-height: 400px; float:none">
+</div>
+
+<h3>Looking Ahead</h3>
+
+<p>Apart from sofa 1.0 we have lots of improvements piling up for 2015. One of the most exciting improvements is our migration of the Catalog API to an ElasticSearch backend. Once the migration is done, we will overhaul our <a href="https://github.com/sofa/sofa-couch-service">sofa-couch-service</a> and rename it to sofa-catalog-service.</p>
+
+<p>We are also planning to rip out more UI stuff from the <a href="https://github.com/sofa/app">app</a> in order to create a whole new set of sofa packages. But let&#39;s do it one step at a time and focus on sofa 1.0 for now...</p>
+]]></content:encoded>
+      <dc:date>2016-01-19T00:00:00+01:00</dc:date>
+    </item>
+    <item>
+      <title>Welcome to the sofa blog!</title>
+      <link>http://sofa.io/blog/announcements/2014/10/27/welcome-to-the-sofa-blog.html</link>
+      <description><![CDATA[A few weeks ago Christoph wrote about our open source mission with the sofa project at CouchCommerce. In order to keep the development of sofa not only open source, but also as transparent as possible, we created this blog to keep you up-to-date with the latest releases, as well as cool things happening in the community.
+]]></description>
+      <pubDate>Mon, 27 Oct 2014 00:00:00 +0100</pubDate>
+      <guid>http://sofa.io/blog/announcements/2014/10/27/welcome-to-the-sofa-blog.html</guid>
+      <content:encoded><![CDATA[<p>A few weeks ago <a href="http://twitter.com/cburgdorf">Christoph</a> wrote about our <a href="http://blog.couchcommerce.com/2014/10/13/its-called-open-source/">open source mission</a> with the sofa project at <a href="http://couchcommerce.com">CouchCommerce</a>. In order to keep the development of sofa not only open source, but also as transparent as possible, we created this blog to keep you up-to-date with the latest releases, as well as cool things happening in the community.</p>
+
+<p>To get started building full-featured e-commerce web apps with sofa, go and checkout out our <a href="https://github.com/sofa/app">open sourced application</a> we published a few weeks ago. In addition we have a first version of our <a href="http://www.sofa.io/docs/#!/api">API documentation</a> online, so you can read about the provided components and its APIs. The documentation is generated automatically from our source code, which means it gets updated together with new sofa releases.</p>
+
+<p>Last but not least we ran a <a href="http://blog.couchcommerce.com/2014/08/25/webinar-get-started-with-sofa-the-e-commerce-web-app-sdk/">webinar</a> where we talked about the first steps to get started with sofa, so make sure to check that one out too!</p>
+
+<p>We&#39;d love to hear about your sofa-driven apps you&#39;re working on, so drop us a line on Twitter at <a href="http://twitter.com/sofa_io">@sofa_io</a>!</p>
+]]></content:encoded>
+      <dc:date>2014-10-27T00:00:00+01:00</dc:date>
+    </item>
+    <dc:date>2016-01-19T00:00:00+01:00</dc:date>
+  </channel>
+</rss>

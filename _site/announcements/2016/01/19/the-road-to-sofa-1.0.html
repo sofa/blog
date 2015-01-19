@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>The Sofa Blog</title>
+        <meta name="viewport" content="width=device-width">
+
+        <meta property="og:title" content="The road to sofa 1.0">
+        <meta property="og:site_name" content="The Sofa Blog">
+        <meta property="og:url" content="http://www.sofa.io/blog/announcements/2016/01/19/the-road-to-sofa-1.0.html">
+        <meta property="og:description" content="">
+        <meta property="og:image" content="http://www.sofa.io/blog/images/sofa-og-logo.png">
+        <meta property="og:local" content="en_US">
+        <meta property="og:publisher" content="http://www.facebook.com/sofaSDK">
+        <meta property="og:type" content="article">
+
+
+        <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700,400italic,600italic,700italic' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Bitter:400,700,400italic' rel='stylesheet' type='text/css'>
+        <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+        <!-- syntax highlighting CSS -->
+        <link rel="stylesheet" href="/blog/css/syntax.css">
+
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="/blog/css/main.css">
+
+    </head>
+    <body>
+
+        <div class="site">
+          <div class="header">
+            <a href="http://sofa.io/blog"><img class="logo" src="/blog/images/sofa-og-logo.png"></a>
+            <h1 class="title"><a href="http://sofa.io/blog">Sofa.io Blog</a></h1>
+          </div>
+
+          <h2>The road to sofa 1.0</h2>
+          <p class="meta">19 Jan 2016</p>
+
+          <div class="post">
+          <p>As we are all slowly recovering from Christmas and New Years Eve we thought it might be a good start to 2015 to let you know what we&#39;ve been working on recently and what our plans are for the new year.</p>
+
+<p>As some of you may have noticed we are quite busy working towards a sofa 1.0 release. We have nailed down a concrete list of tasks and are hard at work to solve them. I&#39;d like to shed some light on each of them and hope to get you excited for 1.0.</p>
+
+<h3>RIP sofa-base</h3>
+
+<p>When we started with the sofa project, we had all the sofa code in one repository. We always knew we wanted sofa to be modular but having all the code together was just easier to begin with and enabled us to experiment and iterate faster. As soon as we felt confident about a component we were able to package it up and release it as a standalone module. This includes that the component got it&#39;s own repository within the sofa organization on github with it&#39;s own issue management, npm and bower packages, documentation and tests.</p>
+
+<p>Over the months we have sliced lots of packages but we also had to clarify lots of open questions and we have still plenty of components waiting to get released as standalone components. We are currently hard at working slicing all the remaining components.</p>
+
+<p>As the <a href="https://github.com/couchcommerce/sofa-base">sofa-base repository</a> has never been part of the sofa organization on github and no npm packages exist, it&#39;s been a constant source of confusion for the sofa community. </p>
+
+<div style="text-align:center">
+    <img src="/blog/images/the-road-to-sofa-1-0/sofa-base-confusion.png" style="max-width: 90%; max-height: 400px; float:none">
+</div>
+
+<p>We are very much looking forward to shut down the repository as soon as all components are sliced and released as standalones.</p>
+
+<h3>RIP cc-something</h3>
+
+<p>You may have noticed some inconsistency in our code base regarding naming and namespaces. Sofa wasn&#39;t born as sofa. It was born as &quot;CouchCommerce WebApp SDK&quot; and renamed to sofa later along the way. Hence we still had plenty of namespaces and prefixes to correct. Everything that previously was <code>cc-something</code> is now <code>sofa-something</code>.</p>
+
+<p>More importantly we created <a href="https://github.com/sofa/guidelines/blob/master/coding-guideline.md">Coding Guidelines</a> to ensure the sofa 1.0 codebase will be consistent across all components.</p>
+
+<p>We also plan to create simple and clear <a href="https://github.com/sofa/guidelines/blob/master/contribution-guideline.md">Contribution Guidelines</a> to lower the barrier for community members to contribute code to the sofa project.</p>
+
+<h3>New Checkout</h3>
+
+<p>Over the last months we have become more and more frustrated with our current Checkout. Integrating new payment service providers and different payment methods yielded way more repetitive work than anticipated.</p>
+
+<p>We sat down with the entire team to overhaul the whole workflow. We are creating a new Checkout API from the ground up. On top of that we are rewriting the <a href="https://github.com/sofa/sofa-checkout-service">sofa-checkout-service</a> to be much more flexible and specifically to make it easier to integrate third party services.</p>
+
+<p>We are also rewriting the whole Checkout UI to be more beautiful, simpler to use and easier to customize.</p>
+
+<div style="text-align:center">
+    <img src="/blog/images/the-road-to-sofa-1-0/checkout.png" style="max-width: 90%; max-height: 400px; float:none">
+</div>
+
+<h3>Looking Ahead</h3>
+
+<p>Apart from sofa 1.0 we have lots of improvements piling up for 2015. One of the most exciting improvements is our migration of the Catalog API to an ElasticSearch backend. Once the migration is done, we will overhaul our <a href="https://github.com/sofa/sofa-couch-service">sofa-couch-service</a> and rename it to sofa-catalog-service.</p>
+
+<p>We are also planning to rip out more UI stuff from the <a href="https://github.com/sofa/app">app</a> in order to create a whole new set of sofa packages. But let&#39;s do it one step at a time and focus on sofa 1.0 for now...</p>
+
+          </div>
+
+          <div class="footer">
+            <div class="contact">
+              <p>
+              <a href="http://sofa.io"><i class="fa fa-home"></i> sofa.io</a>
+              <a href="http://github.com/sofa"><i class="fa fa-github"></i> /sofa</a>
+              <a href="http://twitter.com/sofa"><i class="fa fa-twitter"></i> @sofa_io</a>
+              <a href=""><i class="fa fa-google-plus-square"></i> +sofa</a>
+              <a href="http://sofa.io/blog/rss.xml"><i class="fa fa-rss"></i> RSS Feed</a>
+              </p>
+            </div>
+            <!-- <div class="contact"> -->
+            <!--   <p>The latest goings-on with the sofa project and in the community. We'll update the blog to announce major releases and showcase cool stuff being built with sofa.</p> -->
+            <!-- </div> -->
+          </div>
+        </div>
+
+    </body>
+</html>
