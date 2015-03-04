@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "The road to sofa 1.0"
-date:   2016-01-19
+date:   2015-01-19
 summary: 
 categories:
   - announcements
