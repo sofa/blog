@@ -8,14 +8,14 @@
     <title>Sofa.io Blog</title>
     <link>http://sofa.io/blog</link>
     <description>RSS feed for Sofa.io Blog</description>
-    <pubDate>Tue, 19 Jan 2016 00:00:00 +0100</pubDate>
+    <pubDate>Mon, 19 Jan 2015 00:00:00 +0100</pubDate>
     <item>
       <title>The road to sofa 1.0</title>
-      <link>http://sofa.io/blog/announcements/2016/01/19/the-road-to-sofa-1.0.html</link>
+      <link>http://sofa.io/blog/announcements/2015/01/19/the-road-to-sofa-1.0.html</link>
       <description><![CDATA[As we are all slowly recovering from Christmas and New Years Eve we thought it might be a good start to 2015 to let you know what we&#39;ve been working on recently and what our plans are for the new year.
 ]]></description>
-      <pubDate>Tue, 19 Jan 2016 00:00:00 +0100</pubDate>
-      <guid>http://sofa.io/blog/announcements/2016/01/19/the-road-to-sofa-1.0.html</guid>
+      <pubDate>Mon, 19 Jan 2015 00:00:00 +0100</pubDate>
+      <guid>http://sofa.io/blog/announcements/2015/01/19/the-road-to-sofa-1.0.html</guid>
       <content:encoded><![CDATA[<p>As we are all slowly recovering from Christmas and New Years Eve we thought it might be a good start to 2015 to let you know what we&#39;ve been working on recently and what our plans are for the new year.</p>
 
 <p>As some of you may have noticed we are quite busy working towards a sofa 1.0 release. We have nailed down a concrete list of tasks and are hard at work to solve them. I&#39;d like to shed some light on each of them and hope to get you excited for 1.0.</p>
@@ -60,7 +60,7 @@
 
 <p>We are also planning to rip out more UI stuff from the <a href="https://github.com/sofa/app">app</a> in order to create a whole new set of sofa packages. But let&#39;s do it one step at a time and focus on sofa 1.0 for now...</p>
 ]]></content:encoded>
-      <dc:date>2016-01-19T00:00:00+01:00</dc:date>
+      <dc:date>2015-01-19T00:00:00+01:00</dc:date>
     </item>
     <item>
       <title>Welcome to the sofa blog!</title>
@@ -79,6 +79,6 @@
 ]]></content:encoded>
       <dc:date>2014-10-27T00:00:00+01:00</dc:date>
     </item>
-    <dc:date>2016-01-19T00:00:00+01:00</dc:date>
+    <dc:date>2015-01-19T00:00:00+01:00</dc:date>
   </channel>
 </rss>
